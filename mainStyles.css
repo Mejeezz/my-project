@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+  text-shadow: 0 1px 1px;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  flex-direction: column;
+  min-width: 450px;
+  display: flex;
+  height: 100%;
+  margin: 0;
+  background-color: rgb(20, 193, 173);
+  --header-font-size: 20px;
+  --footer-height: 80px;
+}
+
+.main {
+  background-image: url(https://wallpapershome.com/images/pages/pic_h/12603.jpg);
+  min-height: calc(
+    100vh - var(--header-font-size) - var(--footer-height)
+    );
+  background-repeat: no-repeat;
+  object-fit: fill;
+  background-size: cover;
+}
+
+.container::selection {
+  color: bisque;
+  background-color: none;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: black;
+  padding: 0.5em 0;
+  font-size: var(--header-font-size);
+}
+
+
+.title {
+  font-size: 3rem;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 0 1px 1px;
+}
+
+.title::selection {
+  color: bisque;
+  background-color: none;
+}
+
+.section {
+  margin: 0 50px;
+  padding-bottom: 20px;
+}
+
+.list {
+  font-size: 1rem;
+  margin: 0 50px;
+  padding-bottom: 15px;
+}
+
+.li {
+  padding: 5px;
+}
+
+.li::selection {
+  color: rgb(237, 231, 224);
+  background-color: none;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin: 8px 50px;
+}
+
+.section-title::selection {
+  color: lightblue;
+  background-color: none;
+}
+
+p::selection {
+  color: bisque;
+  background-color: none; 
+}
+
+.article-title::selection {
+  color: bisque;
+  background-color: none;
+}
+
+.block-title::selection {
+  color: bisque;
+  background-color: none;
+}
+
+.logo {
+  display: inline-block;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 5px;
+  margin-right: 60px;
+  cursor: pointer;  
+}
+
+.logo::selection {
+  background-color: black;
+  color: bisque;
+}
+
+.logo:hover {
+  color: rgb(85, 150, 141);
+}
+
+/* @keyframes scaling {
+  0%   {font-size: 19px; left:0px; top:0px;};
+  25%  {font-size: 20px; left:200px; top:0px;};
+  50%  {font-size: 21px; left:200px; top:200px;};
+  75%  {font-size: 22px; left:0px; top:200px;};
+  100% {font-size: 23px; left:0px; top:0px;};
+} */
+
+.space {
+  margin: 0 50px;
+  background-color: rgba(128,128,128);
+  box-shadow: 0px 5px 5px dimgray;
+}
+
+.nav {
+  display: inline-block;
+  /* background-color: #fff; */
+}
+
+.nav::selection {
+  background-color: black;
+}
+
+.nav_link {
+  font-size: 18px;
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+.nav_link::selection {
+  color: bisque;
+  background-color: black;
+}
+
+.header::selection {
+  background-color: black;
+}
+
+.nav_link:hover {
+  color: rgb(59, 125, 125);
+  transform: scale(1.3);
+
+}
+
+.container {
+  margin: 10px;
+}
+
+.article {
+  margin: 0 50px;
+}
+
+.course {
+  /* display: inline-block;
+  width: 300px;
+  min-width: 200px; */
+  background-color: rgba(168, 181, 173, 0.6);
+  padding: 5px;
+  border-radius: 10px;
+  margin: 10px 50px;
+  box-shadow: 0px 5px 5px rgb(128,128,128);
+  transition: all .2s ease-in-out;
+}
+
+.course:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  line-height: var(--footer-height);;
+  color: white;
+  background-color: rgba(128,128,128, 0.85);
+  text-align: center;
+} 
+
+.footer::selection {
+  color:rgb(221, 206, 166);
+  background-color: none;
+}
