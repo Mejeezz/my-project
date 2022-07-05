@@ -186,13 +186,17 @@ p::selection {
   background-color: rgba(168, 181, 173, 0.6);
   padding: 5px;
   border-radius: 10px;
-  margin: 10px 50px;
+  margin: 10px 10px;
   box-shadow: 0px 5px 5px rgb(128,128,128);
   transition: all .2s ease-in-out;
 }
 
+.courses {
+  display: flex;
+}
+
 .course:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .footer {
