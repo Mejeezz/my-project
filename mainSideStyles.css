@@ -123,13 +123,6 @@ p::selection {
   color: rgb(85, 150, 141);
 }
 
-/* @keyframes scaling {
-  0%   {font-size: 19px; left:0px; top:0px;};
-  25%  {font-size: 20px; left:200px; top:0px;};
-  50%  {font-size: 21px; left:200px; top:200px;};
-  75%  {font-size: 22px; left:0px; top:200px;};
-  100% {font-size: 23px; left:0px; top:0px;};
-} */
 
 .space {
   margin: 0 50px;
@@ -139,7 +132,6 @@ p::selection {
 
 .nav {
   display: inline-block;
-  /* background-color: #fff; */
 }
 
 .nav::selection {
@@ -193,8 +185,12 @@ p::selection {
   transition: all .2s ease-in-out;
 }
 
+.courses {
+  display: flex;
+}
+
 .course:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .footer {
